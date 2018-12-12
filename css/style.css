@@ -1,0 +1,874 @@
+/*GLOBAL RULES START*/
+* {
+	margin: 0;
+	padding: 5px;
+	box-sizing: border-box;
+	font-family: 'Cantarell', sans-serif;
+}
+
+/*background-color: rgba(167, 190, 151, 0.4);*/
+
+
+
+/*GLOBAL RULES END*/
+
+body {
+
+	background-color: #E8F3E8;
+
+}
+
+
+
+
+/* MICHELLES NAVBAR - med rettelser og tilpasninger efter behov*/
+/* fra itaddiction.github.io*/
+
+header {
+	max-width: 100%;
+	max-height: 100%;
+	padding: 0 20px;
+	background-color: #A7BE97;
+	/*background: linear-gradient(to bottom, #a7be97 0%, #ffffff 100%);*/
+
+}
+
+header {
+	max-height: 80%;
+
+}
+
+
+#logo-burger {
+	display: flex;
+	align-items: center;
+	margin-left: .5em;
+}
+
+#logo {
+	font-size: .2em;
+	line-height: .2em;
+}
+
+
+#logo a,
+#main-nav a {
+	color: black;
+	text-decoration: none;
+
+}
+
+#main-nav {
+	display: flex;
+	margin-right: .5em;
+	list-style: none;
+}
+
+#main-nav a {
+	display: block;
+	margin-left: 1em;
+	font-size: 1.0em;
+	line-height: 1.4em;
+}
+
+#main-nav a:hover {
+	color: #FFFFFF;
+
+}
+
+.active {
+	color: white;
+}
+
+.hidden {
+	display: none;
+}
+
+/*MEDIA QUERY MOBILE */
+
+
+.logo {
+
+	width: 50%;
+	float: left;
+	margin-left: -12%;
+
+}
+
+@media all and (max-width: 599px) {
+
+	/*HEADER NAV*/
+	header {
+		display: block;
+	}
+
+	#logo-burger {
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	#logo-burger label {
+		display: block;
+		font-size: 2.2em;
+		cursor: pointer;
+	}
+
+	#toggle:checked + #main-nav {
+		display: block;
+	}
+
+	#main-nav {
+		display: none;
+	}
+
+
+
+	#main-nav li {
+		text-align: center;
+		border-top: 1px solid rgba(255, 255, 255, 0.3);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	#main-nav a {
+		margin: 0;
+	}
+
+	#main-nav li:last-of-type {
+		border-bottom: none;
+	}
+
+
+}
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+@media all and (min-width: 600px) {
+
+	/*HEADER NAV*/
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	#logo-burger {
+		margin: 0;
+	}
+
+	#logo {
+		margin-top: .2em;
+		margin-left: 5%;
+		width: 200%;
+	}
+
+	#main-nav {
+		justify-content: space-around;
+		width: 100%;
+		margin: 0;
+		font-size: 15px;
+	}
+
+	#main-nav a {
+		margin: 0 .5em;
+		font-size: 10px;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	label {
+		display: none;
+	}
+
+
+}
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+
+@media all and (min-width: 1024px) {
+
+	/*HEADER*/
+	header {
+		flex-direction: row;
+
+	}
+
+	#main-nav a {
+		margin: 0 .5em;
+		font-size: 16px;
+
+	}
+
+
+
+}
+
+/* MICHELLES NAVBAR - med rettelser og tilpasninger efter behov*/
+
+
+
+/* KODE TIL INDEX.HTML - START */
+.beskrivelse,
+.fremgangsmaade {
+
+
+	background-color: rgba(167, 190, 151, 0.4);
+
+}
+
+
+aside {
+
+	width: 100%;
+
+}
+
+.plantefars {
+
+	width: 100%;
+	margin-top: 1%;
+
+}
+
+
+aside > img {
+
+	width: 15%;
+	margin-left: -5px;
+	margin-bottom: 2%;
+
+
+}
+
+
+.button,
+.button1 {
+
+	background-color: #DE5A66;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	float: right;
+	border-radius: 10%;
+
+
+}
+
+.button:hover {
+
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	transition-duration: 1.2s;
+	font-style: oblique;
+
+}
+
+.button1:hover {
+
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	transition-duration: 1.2s;
+	font-style: oblique;
+}
+
+.button,
+.button1 > a {
+
+	text-decoration: none;
+
+}
+
+.button1 {
+
+	margin-top: -35px;
+	text-decoration: none;
+
+}
+
+.plantefars1 {
+
+	display: none;
+}
+
+
+
+/* KODE TIL INDEX.HTML - SLUT */
+
+
+
+/* KODE TIL KONKURRENCER.HTML - START */
+.veganermad {
+
+	width: 70%;
+	margin-left: 15%;
+}
+
+#baredygtig {
+
+	float: right;
+}
+
+#baredygtig:hover {
+	font-style: oblique;
+
+}
+
+#fars {
+
+	margin-left: 3%;
+	margin-right: 0%;
+
+}
+
+#fars:hover {
+	font-style: oblique;
+
+}
+
+
+#vinder {
+
+	font-size: 10px;
+	font-style: italic;
+
+}
+
+.inspiration {
+
+	margin-bottom: 3%;
+}
+
+.deltag {
+
+	background-color: rgba(167, 190, 151, 0.4);
+
+}
+
+.plantebof {
+
+	display: none;
+
+}
+
+.fal {
+	display: none;
+
+}
+
+.burger {
+	display: none;
+
+}
+
+.ret1,
+.ret2,
+.ret3,
+.ret4,
+.ret5,
+.ret6,
+.ret7,
+.ret8,
+.ret9 {
+
+	display: none;
+}
+
+
+/* KODE TIL KONKURRENCER.HTML - SLUT */
+
+
+
+/* KODE TIL INSPIRATION.HTML - START */
+.plantefarsret {
+
+	width: 75%;
+
+}
+
+
+.ikoner > img {
+
+	width: 100%;
+	display: flex;
+
+}
+
+.ikoner {
+	width: 20%;
+	float: right;
+	margin-right: 5%;
+
+
+}
+
+.ingredienser {
+
+	width: 20%;
+	margin-bottom: -8%;
+	margin-left: 10%;
+}
+
+.fremgang {
+
+	width: 20%;
+	margin-bottom: -8%;
+	margin-left: 12%;
+}
+
+.falafelret {
+
+	width: 80%;
+	margin-left: 10%;
+}
+
+
+
+/* KODE TIL INSPIRATION.HTML - SLUT*/
+
+/* FOOTER CSS KODE */
+footer {
+
+	background-color: #A7BE97;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+
+}
+
+footer .medier > img {
+
+	width: 15%;
+	height: 15%;
+	flex-direction: column;
+	float: right;
+
+
+}
+
+footer .medier > img {
+
+	width: 15%;
+	height: 15%;
+	flex-direction: column;
+	float: right;
+	margin-top: -53px;
+	cursor: pointer;
+
+
+}
+
+footer .medier > img:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	transition-duration: 0.5s;
+	border-radius: 20px;
+}
+
+/* FOOTER CSS KODE */
+
+.plantefars4 {
+
+	display: none;
+}
+
+/*MEDIA QUERIES STARTER - IPAD ==> WEB*/
+
+@media all and (min-width: 600px) {
+
+	/*INDEX.HTML - IPAD START*/
+
+	h2 {
+
+		font-size: 30px;
+
+	}
+
+	.flex {
+
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+
+	}
+
+	.plantefars {
+
+		width: 70%;
+		margin-left: 10%;
+
+	}
+
+	.plantefars4 {
+
+		display: block;
+		width: 70%;
+		margin-left: 10%;
+		margin-top: -10%;
+
+	}
+
+	.plantefars1 {
+
+		display: block;
+		width: 100%;
+
+	}
+
+	footer .medier > img {
+
+		width: 10%;
+		margin-left: 3%;
+
+
+	}
+
+	/*INDEX.HTML - IPAD SLUT*/
+
+	/*INSPIRATION.HTML IPAD START*/
+
+	.ingredienser {
+
+		margin-left: 6%;
+		margin-bottom: -8%;
+
+
+	}
+
+	.fremgang {
+
+		margin-left: 4%;
+		margin-bottom: -6%;
+	}
+
+	/*INSPIRATION.HTML IPAD SLUT*/
+
+	/*KONKURRENCER.HTML IPAD START*/
+
+	.grid1 {
+		display: grid;
+		width: 100%;
+		grid-gap: 3px;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: auto auto auto;
+		grid-template-areas:
+			"p p p p p f f f"
+			"b b b b b v v v"
+			"b b b b b v v v"
+	}
+
+	.veganermad {
+		grid-area: v;
+		width: 100%;
+		margin-left: -0.5%;
+		margin-top: -22%;
+	}
+
+	.plantebof {
+		grid-area: p;
+		display: block;
+		width: 100%;
+	}
+
+	.fal {
+		grid-area: f;
+		display: block;
+		width: 100%;
+	}
+
+	.burger {
+		grid-area: b;
+		display: block;
+		width: 100%;
+	}
+
+	.ret1,
+	.ret2,
+	.ret3,
+	.ret4,
+	.ret5,
+	.ret6,
+	.ret7,
+	.ret8,
+	.ret9 {
+
+		display: none;
+	}
+
+	/*KONKURRENCER.HTML IPAD SLUT*/
+}
+
+@media all and (min-width: 1024px) {
+
+	/*INDEX.HTML - WEB START*/
+
+	h2 {
+
+		font-size: 40px;
+
+	}
+
+	footer {
+
+		flex-direction: column;
+		justify-content: space-between;
+
+	}
+
+	footer .medier > img {
+
+		width: 6%;
+		padding-bottom: -20px;
+
+
+	}
+
+	.plantefars1 {
+
+		width: 80%;
+		margin-left: 10%;
+
+	}
+
+	/*.flex {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		margin-left: -6%;
+
+	}
+
+	.plantefars4 {
+
+		display: block;
+		width: 50%;
+		height: 50%;
+		margin-top: 6.5%;
+		margin-left: -1%;
+	}
+
+	.plantefars {
+		width: 42%;
+		height: 42%;*/
+
+
+
+	.flex {
+		display: grid;
+		grid-gap: 6px;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: auto auto;
+		grid-template-areas:
+			"pl pl pl pl p p p p"
+			"pl pl pl pl p p p p"
+	}
+
+	.plantefars4 {
+		grid-area: p;
+		width: 100%;
+		margin-top: 15%;
+		margin-left: -2px;
+	}
+
+	.plantefars {
+		grid-area: pl;
+		width: 100%;
+		margin-left: 10px;
+
+	}
+
+	/*INDEX.HTML - WEB SLUT*/
+
+	/*INSPIRATION.HTML WEB START*/
+
+
+	.wrapper {
+		display: grid;
+		width: 100%;
+		height: 100%;
+		grid-gap: 6px;
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: auto auto auto;
+		grid-template-areas:
+			" p p p p b b b b"
+			" p p p p b b b b"
+			" fr fr fr fr f f f f"
+	}
+
+	.plantefarsret {
+		grid-area: p;
+		width: 100%;
+
+	}
+
+	.beskrivelse {
+		grid-area: b;
+		width: 100%;
+
+
+	}
+
+	.fremgangsmaade {
+		grid-area: fr;
+		width: 100%;
+
+
+
+	}
+
+	.falafelret {
+		grid-area: f;
+		width: 100%;
+
+		margin-left: -0.5%;
+
+	}
+
+	.ingredienser,
+	.fremgang,
+	.ikoner {
+
+		display: none;
+	}
+
+
+
+	/*INSPIRATION.HTML WEB SLUT*/
+
+	/*KONKURRENCER.HTML WEB START*/
+	.grid1 {
+		display: grid;
+		width: 100%;
+		grid-gap: 4px;
+		grid-auto-flow: dense;
+		transition: transform .2s;
+
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:
+			"r8 r8 r8 r8 r4 r4 r3 r3"
+			"p p f f r7 r7 v v"
+			"r2 r2 b b r r v v"
+			"r6 r6 r5 r5 r r r9 r9"
+
+	}
+
+	.grid1 > img:hover {
+		transform: scale(1.1);
+		transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+		transition-duration: 0.8s;
+
+	}
+
+	.veganermad {
+		grid-area: v;
+		width: 100%;
+
+
+		display: block;
+	}
+
+	.plantebof {
+		grid-area: p;
+		display: block;
+		width: 100%;
+		height: 100%;
+
+
+	}
+
+	.fal {
+		grid-area: f;
+		display: block;
+		width: 100%;
+
+
+	}
+
+	.burger {
+		grid-area: b;
+		display: block;
+		width: 100%;
+
+	}
+
+	.ret1 {
+		grid-area: r;
+		width: 100%;
+
+		display: block;
+	}
+
+	.ret2 {
+		grid-area: r2;
+		width: 100%;
+
+		display: block;
+	}
+
+	.ret3 {
+		grid-area: r3;
+		width: 100%;
+		height: 80%;
+
+
+		display: block;
+
+	}
+
+	.ret4 {
+		grid-area: r4;
+		width: 100%;
+		height: 85%;
+
+
+		display: block;
+
+	}
+
+	.ret5 {
+		grid-area: r5;
+		width: 100%;
+		height: 100%;
+
+		display: block;
+	}
+
+	.ret6 {
+		grid-area: r6;
+		width: 100%;
+		height: 100%;
+
+		display: block;
+
+	}
+
+	.ret7 {
+		grid-area: r7;
+		width: 100%;
+		height: 100%;
+		display: block;
+		margin-top: -10%;
+
+	}
+
+	.ret8 {
+		grid-area: r8;
+		width: 100%;
+		display: block;
+
+	}
+
+	.ret9 {
+		grid-area: r9;
+		width: 100%;
+		display: block;
+	}
+
+}
+
+
+
+/*KONKURRENCER.HTML WEB SLUT*/
