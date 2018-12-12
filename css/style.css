@@ -291,8 +291,6 @@ aside > img {
 	display: none;
 }
 
-
-
 /* KODE TIL INDEX.HTML - SLUT */
 
 
@@ -504,6 +502,7 @@ footer .medier > img:hover {
 
 		display: block;
 		width: 70%;
+		height: 72%;
 		margin-left: 10%;
 		margin-top: -10%;
 
